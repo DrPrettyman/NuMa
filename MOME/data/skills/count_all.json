@@ -1,0 +1,10 @@
+{
+    "id": "skill.count_all",
+    "type": "skill",
+    "label": "Count all",
+    "description": "Count every object in a set, one at a time, tagging each exactly once, to find the total. Leaf skill: directly assessable, no further decomposition.",
+    "satisfied_by": [],
+    "cgi_schema": "part_part_whole",
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

@@ -1,0 +1,9 @@
+{
+    "id": "concept.cardinality",
+    "type": "concept",
+    "label": "Cardinality",
+    "description": "The last number said when counting a set names how many items are in the set as a whole, not just the last item touched.",
+    "requires": ["concept.counting_sequence_to_10"],
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

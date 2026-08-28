@@ -1,0 +1,13 @@
+{
+    "id": "exercise.bare_number_fact",
+    "type": "exercise",
+    "label": "Bare number fact",
+    "description": "The same addition presented with no concrete referents. Without objects to model, an abstract prompt like this tends to invite a non-counting strategy -- bridging through ten, a derived fact, or straight retrieval -- over counting-all/counting-on.",
+    "prompt": "8 + 5 = ?",
+    "response_format": "numeric_answer",
+    "tests": ["skill.add_to"],
+    "favors_strategies": ["strategy.make_ten", "strategy.derived_fact", "strategy.retrieval"],
+    "cgi_schema": "join",
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

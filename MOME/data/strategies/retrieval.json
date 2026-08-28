@@ -1,0 +1,13 @@
+{
+    "id": "strategy.retrieval",
+    "type": "strategy",
+    "label": "Retrieval",
+    "description": "Recall the sum directly from memory, without visibly executing a counting or derivation strategy. What unlocks skill.add_to_fluent -- the strategy-mediated skill is a prerequisite, since automaticity is understood as building on having solved it via strategy first, not a separate route to the answer.",
+    "requires": {
+        "concepts": [],
+        "skills": ["skill.add_to"]
+    },
+    "cgi_schema": "join",
+    "tags": ["early_number_sense", "automaticity"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

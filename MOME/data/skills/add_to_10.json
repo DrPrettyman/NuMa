@@ -1,0 +1,11 @@
+{
+    "id": "skill.add_to_10",
+    "type": "skill",
+    "label": "Add to 10",
+    "description": "Compute 10 + b for a single-digit b (e.g. 10 + 3 -> 13). Treated as its own, more primitive leaf skill rather than an instance of the general skill.add_to(N) family -- adding onto a round base like 10 is developmentally more direct (it maps straight onto the tens-and-ones naming, 'ten-three'), and it is exactly the component strategy.make_ten needs, not the general single-digit + single-digit skill it is used to build.",
+    "template": {"param": "b", "domain": [1, 2, 3, 4, 5, 6, 7, 8, 9]},
+    "satisfied_by": [],
+    "cgi_schema": "join",
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

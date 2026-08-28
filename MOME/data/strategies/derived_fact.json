@@ -1,0 +1,13 @@
+{
+    "id": "strategy.derived_fact",
+    "type": "strategy",
+    "label": "Derived fact",
+    "description": "Derive a new sum from an already-known related fact rather than counting -- e.g. using a known a+b to get b+a via commutativity, or adjusting a nearby known fact (knowing 5+5=10 to derive 5+6=11). The 'already-known related fact' is necessarily a *different* instance of skill.add_to than the one being solved, so it is not encoded as a requires edge here: at the template level that would be a same-node self-loop, and binding it to a specific other instance needs the per-instance parameter binding v1 explicitly defers (see SCHEMA.md).",
+    "requires": {
+        "concepts": ["concept.commutativity_of_addition"],
+        "skills": []
+    },
+    "cgi_schema": "join",
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

@@ -1,0 +1,14 @@
+{
+    "id": "exercise.timed_fact_drill",
+    "type": "exercise",
+    "label": "Timed fact drill",
+    "description": "Rapid-fire single-digit sums under a short response-time budget. Testing skill.add_to_fluent specifically, not skill.add_to -- the time pressure is the point, distinguishing automatised retrieval from a correctly-executed but slower strategy.",
+    "prompt": "Rapid-fire single-digit sums, e.g. '6 + 3 = ?', answer expected within roughly 3 seconds.",
+    "response_format": "numeric_answer_timed",
+    "tests": ["skill.add_to_fluent"],
+    "favors_strategies": ["strategy.retrieval"],
+    "mastery_signal": "response_time",
+    "cgi_schema": "join",
+    "tags": ["early_number_sense", "automaticity"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

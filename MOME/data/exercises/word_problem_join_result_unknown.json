@@ -1,0 +1,13 @@
+{
+    "id": "exercise.word_problem_join_result_unknown",
+    "type": "exercise",
+    "label": "Word problem: join, result unknown",
+    "description": "A concrete word problem with a Join (result-unknown) structure. Naming actual objects and an event invites modelling/counting rather than treating it as a bare number fact.",
+    "prompt": "Sam has 8 stickers and gets 5 more. How many stickers does Sam have now?",
+    "response_format": "numeric_answer_with_working_shown",
+    "tests": ["skill.add_to"],
+    "favors_strategies": ["strategy.counting_all", "strategy.counting_on"],
+    "cgi_schema": "join",
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

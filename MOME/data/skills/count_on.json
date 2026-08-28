@@ -1,0 +1,10 @@
+{
+    "id": "skill.count_on",
+    "type": "skill",
+    "label": "Count on",
+    "description": "Starting from a given number, continue the count sequence forward by a given amount without recounting from 1. Leaf skill: directly assessable, no further decomposition.",
+    "satisfied_by": [],
+    "cgi_schema": "join",
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

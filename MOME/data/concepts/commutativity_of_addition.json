@@ -1,0 +1,9 @@
+{
+    "id": "concept.commutativity_of_addition",
+    "type": "concept",
+    "label": "Commutativity of addition",
+    "description": "a + b = b + a for any a, b. Its own conceptual milestone: a child fluent with 1+2 may not yet have generalised that 2+1 gives the same result, so this is not assumed automatically from single-instance mastery.",
+    "requires": [],
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

@@ -1,0 +1,13 @@
+{
+    "id": "strategy.counting_on",
+    "type": "strategy",
+    "label": "Counting on",
+    "description": "To solve a + b: start at a (typically the larger addend) and count on b more, without recounting from 1. A step up in efficiency from counting-all in the CGI progression.",
+    "requires": {
+        "concepts": ["concept.counting_sequence_to_10"],
+        "skills": ["skill.count_on"]
+    },
+    "cgi_schema": "join",
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

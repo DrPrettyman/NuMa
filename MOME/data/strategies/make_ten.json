@@ -1,0 +1,13 @@
+{
+    "id": "strategy.make_ten",
+    "type": "strategy",
+    "label": "Make ten (bridge through ten)",
+    "description": "To solve a + b where a + b > 10: split b into a part that completes a to 10, and a remainder, then add the remainder onto 10. E.g. 8 + 5 = 8 + 2 + 3 = 10 + 3 = 13. Needs the concept of a 10-bond as a prerequisite, not just the sub-skills -- otherwise a child could pass split_10 and add_to in isolation without seeing why the decomposition is valid here.",
+    "requires": {
+        "concepts": ["concept.bond_to_10"],
+        "skills": ["skill.split_10", "skill.add_to_10"]
+    },
+    "cgi_schema": "part_part_whole",
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

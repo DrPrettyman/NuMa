@@ -1,0 +1,12 @@
+{
+    "id": "skill.add_to_fluent",
+    "type": "skill",
+    "label": "Add to (fluent)",
+    "description": "Produce the sum a + N automatically, without visibly executing a strategy. The automatised counterpart of skill.add_to: mastery is judged by response time rather than correctness alone, since correctness alone conflates a child still running a strategy every time with one who just knows the fact.",
+    "template": {"param": "N", "domain": [1, 2, 3, 4, 5, 6, 7, 8, 9]},
+    "satisfied_by": ["strategy.retrieval"],
+    "mastery_signal": "response_time",
+    "cgi_schema": "join",
+    "tags": ["early_number_sense", "automaticity"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

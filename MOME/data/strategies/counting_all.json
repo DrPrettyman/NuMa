@@ -1,0 +1,13 @@
+{
+    "id": "strategy.counting_all",
+    "type": "strategy",
+    "label": "Counting all",
+    "description": "To solve a + b: count out a set of a objects, count out a separate set of b objects, then count all of the objects together from 1 to find the total. The earliest, most concrete addition strategy in the CGI progression.",
+    "requires": {
+        "concepts": ["concept.cardinality"],
+        "skills": ["skill.count_all"]
+    },
+    "cgi_schema": "join",
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

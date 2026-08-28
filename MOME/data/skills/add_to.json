@@ -1,0 +1,16 @@
+{
+    "id": "skill.add_to",
+    "type": "skill",
+    "label": "Add to",
+    "description": "Compute a + N for a single-digit addend N, by any valid strategy. OR-node: mastery via any one of the strategies below is sufficient.",
+    "template": {"param": "N", "domain": [1, 2, 3, 4, 5, 6, 7, 8, 9]},
+    "satisfied_by": [
+        "strategy.counting_all",
+        "strategy.counting_on",
+        "strategy.make_ten",
+        "strategy.derived_fact"
+    ],
+    "cgi_schema": "join",
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}

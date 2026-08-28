@@ -1,0 +1,11 @@
+{
+    "id": "skill.split_10",
+    "type": "skill",
+    "label": "Split 10",
+    "description": "Given 10 and a part a, state the complementary part (10 - a). E.g. split_10(7) -> 3. Leaf skill: directly assessable, no further decomposition. Distinct from the equivalent subtraction fact (10 - a = ?), which belongs to the Separate schema, not Part-Part-Whole -- transfer between them is not assumed.",
+    "template": {"param": "a", "domain": [1, 2, 3, 4, 5, 6, 7, 8, 9]},
+    "satisfied_by": [],
+    "cgi_schema": "part_part_whole",
+    "tags": ["early_number_sense"],
+    "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
+}
