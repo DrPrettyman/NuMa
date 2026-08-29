@@ -5,7 +5,6 @@
     "description": "For a part a (1 through 9), there is a complementary part (10 - a) such that a + (10 - a) = 10. Each bond (e.g. 6+4=10) is treated as its own instance of this family, not assumed equivalent to its reverse (4+6=10) until commutativity is established.",
     "template": {"param": "a", "domain": [1, 2, 3, 4, 5, 6, 7, 8, 9]},
     "cgi_schema": "part_part_whole",
-    "requires": ["concept.cardinality"],
     "tags": ["early_number_sense"],
     "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
 }

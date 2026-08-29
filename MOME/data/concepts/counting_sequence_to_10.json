@@ -3,7 +3,6 @@
     "type": "concept",
     "label": "Counting sequence to 10",
     "description": "The count sequence 1, 2, ..., 10 has a fixed, stable order, and every number in it has a definite successor.",
-    "requires": [],
     "tags": ["early_number_sense"],
     "source": "Carpenter, Fennema, Franke, Levi & Empson, Children's Mathematics: Cognitively Guided Instruction (2nd ed., 2014)"
 }

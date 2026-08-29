@@ -18,8 +18,6 @@ digraph MOME {
   "strategy.derived_fact" [label="Derived fact\n(strategy)", style="filled,dashed", fillcolor="#fb8500"];
   "strategy.make_ten" [label="Make ten (bridge through ten)\n(strategy)", style="filled,dashed", fillcolor="#fb8500"];
   "strategy.retrieval" [label="Retrieval\n(strategy)", style="filled,dashed", fillcolor="#fb8500"];
-  "concept.bond_to_10" -> "concept.cardinality";
-  "concept.cardinality" -> "concept.counting_sequence_to_10";
   "exercise.bare_number_fact" -> "skill.add_to";
   "exercise.bare_number_fact" -> "strategy.make_ten";
   "exercise.bare_number_fact" -> "strategy.derived_fact";

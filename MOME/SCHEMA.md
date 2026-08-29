@@ -50,8 +50,16 @@ Every node file has:
   [id, ...]}` — *all* listed concepts and skills are required. Strategies
   need concept edges, not just skill edges: e.g. "bridge through ten" needs
   the *concept* of a 10-bond, not just the *skill* of splitting a number.
-- **Concept** (plain AND): `requires: [id, ...]` — other concepts this one
-  builds on. Can be empty for a foundational concept.
+- **Concept**: no edges of its own. Concept-to-concept sequencing is
+  deliberately out of scope for now — deciding which concepts prerequisite
+  which others needs pedagogical/developmental justification this project
+  doesn't have yet, not just an intuitive-seeming edge. The schema enforces
+  this (`extra="forbid"` on `ConceptNode`): a `requires` field on a concept
+  file fails validation rather than silently doing nothing. See
+  `planning/mome_relations_and_granularity.md` for the reasoning. A concept
+  can still be *required by* a Strategy (see below) — that's a different,
+  more directly justifiable claim (the strategy's own procedure invokes the
+  concept), and stays in scope.
 
 Edge direction in the compiled graph is **node → what it points at** (a
 node points at the things it depends on, or — for Exercise — the things it

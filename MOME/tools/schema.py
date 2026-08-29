@@ -6,7 +6,7 @@ from __future__ import annotations
 
 from typing import Annotated, Literal, Optional, Union
 
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 CgiSchema = Literal["join", "separate", "part_part_whole", "compare"]
 MasterySignal = Literal["correctness", "response_time"]
@@ -53,13 +53,24 @@ class NodeBase(BaseModel):
 
 
 class ConceptNode(NodeBase):
-    """Declarative knowledge. Plain AND over other concepts."""
+    """Declarative knowledge. No edges of its own for now.
+
+    Concept-to-concept sequencing is deliberately out of scope: deciding
+    which concepts prerequisite which others needs pedagogical/developmental
+    justification (evidence about what typically needs to be in place before
+    something becomes graspable), not just an intuitive-seeming edge, and
+    this project doesn't have that evidence in hand yet. See
+    planning/mome_relations_and_granularity.md. extra="forbid" so a
+    `requires` field can't quietly reappear without deliberately revisiting
+    this decision here in code.
+    """
+
+    model_config = ConfigDict(extra="forbid")
 
     type: Literal["concept"]
-    requires: list[str] = Field(default_factory=list)
 
     def prerequisite_ids(self) -> list[str]:
-        return list(self.requires)
+        return []
 
 
 class SkillNode(NodeBase):
